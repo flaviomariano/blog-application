@@ -1,0 +1,96 @@
+@import 'normalize';
+@import 'variables';
+@import 'bootstrap/bootstrap';
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+h1 {
+    color: $light_color;
+    font-size: 3em;
+    font-weight: 700;
+}
+
+h2 {
+    color: $darker_color;
+    font-size: 2em;
+    font-weight: 700;
+    margin: 0 0 .3em;
+}
+
+h5 {
+    font-size: 1.5em;
+    font-weight: 700;
+    padding: 0 0 .7em;
+}
+
+a {
+    font-weight: 700;
+    color: $darker_color;
+
+    &:hover, &:focus {
+        color: $darker_color;
+    }
+
+    &:active {
+        color: $darker_color;
+        opacity: .75;
+    }
+}
+
+.main-header {
+    background: $dark_color;
+    padding: 1.6em 2.5em;
+
+    a {
+        color: $light_color;
+    }
+}
+
+.main-content-header {
+    width: 100%;
+    padding: 8em 0;
+    background: $darker_color;
+    color: $light_color;
+    text-align: center;
+}
+
+.container {
+    padding: 2.5em 0;
+}
+
+.loading-container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    display: flex;
+    background: $light_color;
+}
+
+article {
+    p {
+        font-size: 1.4em;
+    }
+}
+
+.post-content {
+    h1 {
+        color: $darker_color;
+    }
+}
+
+.post-info {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1em;
+
+    li {
+        display: inline-block;
+        padding: 0 1.5em 0 0;
+    }
+}

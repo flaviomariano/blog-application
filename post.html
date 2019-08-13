@@ -1,0 +1,63 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Single post</title>
+    <meta name="description" content="Challenge app for blog application - single post">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--    <link rel="manifest" href="site.webmanifest">-->
+    <link rel="apple-touch-icon" href="icon.png">
+
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+    <header class="main-header">
+        <div class="logo">
+            <a href="/">Tech blog</a>
+        </div>
+    </header>
+
+    <section class="post-content">
+        <div id="post-container" class="container"></div>
+
+        <div class="container">
+            <h5>Insert new comment</h5>
+            <div id="comments-container"></div>
+        </div>
+
+        <div class="container">
+            <h5>Insert new comment</h5>
+            <form id="add-comment" method="post">
+                <div class="form-group">
+                    <label for="author">Your name</label>
+                    <input type="text" class="form-control" id="author" placeholder="author name">
+                </div>
+
+                <div class="form-group">
+                    <label for="author">Your name</label>
+                    <textarea id="content" class="form-control" placeholder="insert your new comment here"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">
+                    submit
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <div id="loading-container" class="loading-container justify-content-center align-items-center">
+        <div class="spinner-border text-primary" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+
+    <script src="js/post.js"></script>
+
+
+</body>
+
+</html>

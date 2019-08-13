@@ -1,0 +1,57 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Challenge app for blog application</title>
+    <meta name="description" content="Create a blog application that interfaces with the provided REST API">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="icon.png">
+
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="logo">
+            <a href="/">Tech blog</a>
+        </div>
+    </header>
+    <section class="main-content">
+        <header class="main-content-header">
+            <h1>
+                Don't miss our weekly updates about tech news
+            </h1>
+        </header>
+        <div class="container">
+            <div class="sortbar">
+                <div class="input-group mb-12">
+                    <div class="input-group-prepend">
+                        <label class="input-group-text" for="sort">sort by: </label>
+                    </div>
+                    <select class="custom-select" id="sort">
+                        <option value="0" selected>Newest</option>
+                        <option value="1">Oldest</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="posts-container">
+
+        </div>
+    </section>
+
+    <div id="loading-container" class="loading-container justify-content-center align-items-center">
+        <div class="spinner-border text-primary" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+
+
+</body>
+
+</html>
